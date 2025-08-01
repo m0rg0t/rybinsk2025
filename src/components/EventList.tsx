@@ -1,7 +1,7 @@
 import { useState, useEffect, useMemo } from 'react';
 import { LocationCard } from './LocationCard';
 import { FilterBar } from './FilterBar';
-import { EventData, EventWithStatus, FilterType } from '@/types';
+import { EventData, FilterType } from '@/types';
 import { addStatusToEvent } from '@/utils/time';
 
 interface EventListProps {

@@ -1,4 +1,4 @@
-import { format, parse, isAfter, isBefore, isWithinInterval } from 'date-fns';
+import { format, parse, isBefore, isWithinInterval } from 'date-fns';
 import { ru } from 'date-fns/locale';
 import { Event, EventWithStatus, EventStatus } from '@/types';
 
