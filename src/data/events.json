@@ -1,0 +1,242 @@
+{
+  "date": "2025-08-02",
+  "title": "День города 2025",
+  "locations": [
+    {
+      "id": "krestovaya",
+      "name": "Крестовая ул.",
+      "events": [
+        {
+          "id": "krest-1",
+          "time": "11:00-14:45",
+          "title": "Фестиваль «Рыбинск — столица бурлаков»",
+          "description": "Работа интерактивных зон",
+          "category": "festival"
+        },
+        {
+          "id": "krest-2", 
+          "time": "15:30-16:40",
+          "title": "Концертная программа",
+          "description": "Народный коллектив",
+          "category": "concert"
+        }
+      ]
+    },
+    {
+      "id": "krasnaya",
+      "name": "Красная площадь",
+      "events": [
+        {
+          "id": "kras-1",
+          "time": "10:00-20:00",
+          "title": "Праздничное оформление",
+          "description": "Декорации и атмосфера",
+          "category": "decoration"
+        },
+        {
+          "id": "kras-2",
+          "time": "11:00-17:00",
+          "title": "Площадка «Краски детства»",
+          "description": "Детская зона",
+          "category": "children"
+        },
+        {
+          "id": "kras-3",
+          "time": "13:15-13:45",
+          "title": "«Театр из чемодана»",
+          "description": "Детский театр",
+          "category": "theater"
+        },
+        {
+          "id": "kras-4",
+          "time": "13:45-14:15",
+          "title": "Площадка «Море»",
+          "description": "Интерактивная зона",
+          "category": "interactive"
+        },
+        {
+          "id": "kras-5",
+          "time": "16:10-16:40",
+          "title": "«Цирковая семейка «УРА!»",
+          "description": "Цирковое представление",
+          "category": "circus"
+        },
+        {
+          "id": "kras-6",
+          "time": "18:00-19:30",
+          "title": "Выступление артиста «Дорожное радио»",
+          "description": "Музыкальная программа",
+          "category": "concert"
+        }
+      ]
+    },
+    {
+      "id": "stoyalaya",
+      "name": "Стоялая ул.",
+      "events": [
+        {
+          "id": "stoy-1",
+          "time": "10:00-20:00",
+          "title": "Фестиваль «Рыбинск»",
+          "description": "Уличная еда",
+          "category": "food"
+        },
+        {
+          "id": "stoy-2",
+          "time": "11:00-17:00",
+          "title": "Выставка ретро-автомобилей",
+          "description": "Классические авто",
+          "category": "exhibition"
+        },
+        {
+          "id": "stoy-3",
+          "time": "13:20-14:00",
+          "title": "Шоу мыльных пузырей",
+          "description": "Развлекательная программа",
+          "category": "show"
+        },
+        {
+          "id": "stoy-4",
+          "time": "18:00-18:30",
+          "title": "Опен Городских проспектов",
+          "description": "Открытие городского мероприятия",
+          "category": "opening"
+        }
+      ]
+    },
+    {
+      "id": "bukvinskaya",
+      "name": "Буквинская ул.",
+      "events": [
+        {
+          "id": "bukv-1",
+          "time": "10:00-17:00",
+          "title": "Фестиваль «Рыбное село»",
+          "description": "Исторический проект",
+          "category": "historical"
+        },
+        {
+          "id": "bukv-2",
+          "time": "11:00-17:00",
+          "title": "Интерактивный проект «Театр поэзии»",
+          "description": "Поэтические выступления",
+          "category": "poetry"
+        },
+        {
+          "id": "bukv-3",
+          "time": "11:00-17:00",
+          "title": "Контактный зоопарк",
+          "description": "Зоологическая выставка",
+          "category": "zoo"
+        },
+        {
+          "id": "bukv-4",
+          "time": "14:10-15:00",
+          "title": "Оригинальный концертный номер «Волшебный хоровод»",
+          "description": "Музыкально-танцевальное представление",
+          "category": "concert"
+        },
+        {
+          "id": "bukv-5",
+          "time": "15:00",
+          "title": "Конная выездка",
+          "description": "Выступление с лошадьми",
+          "category": "equestrian"
+        },
+        {
+          "id": "bukv-6",
+          "time": "18:10",
+          "title": "Концерт «Хор им. А. Свешникова»",
+          "description": "Хоровое исполнение",
+          "category": "concert"
+        }
+      ]
+    },
+    {
+      "id": "paradnaya",
+      "name": "Парадная лестница",
+      "events": [
+        {
+          "id": "par-1",
+          "time": "20:00-22:00",
+          "title": "Гала-концерт",
+          "description": "Главное мероприятие дня",
+          "category": "gala"
+        },
+        {
+          "id": "par-2",
+          "time": "22:10",
+          "title": "Фейерверк",
+          "description": "Праздничный салют",
+          "category": "fireworks"
+        }
+      ]
+    },
+    {
+      "id": "preobrazhensky",
+      "name": "Преображенский парк",
+      "events": [
+        {
+          "id": "preo-1",
+          "time": "11:00-17:00",
+          "title": "«Мой город — спорт»",
+          "description": "Спортивная площадка",
+          "category": "sports"
+        },
+        {
+          "id": "preo-2",
+          "time": "14:30-16:00",
+          "title": "Интерактивная площадка «Игровая карусель»",
+          "description": "Игровая зона",
+          "category": "games"
+        }
+      ]
+    },
+    {
+      "id": "alleya-slavy",
+      "name": "Аллея Славы",
+      "events": [
+        {
+          "id": "all-1",
+          "time": "10:00-22:00",
+          "title": "Выставка ретро-техники",
+          "description": "Историческая техника",
+          "category": "exhibition"
+        }
+      ]
+    },
+    {
+      "id": "aviatoriya",
+      "name": "Авиатория реки",
+      "events": [
+        {
+          "id": "avi-1",
+          "time": "22:00-22:10",
+          "title": "Проекционный фейерверк",
+          "description": "Светомузыкальное шоу",
+          "category": "fireworks"
+        }
+      ]
+    },
+    {
+      "id": "volzhsky",
+      "name": "Волжский парк. Балеткина",
+      "events": [
+        {
+          "id": "vol-1",
+          "time": "11:00-17:00",
+          "title": "Фестиваль «Добрая земля»",
+          "description": "Благотворительный фестиваль",
+          "category": "charity"
+        },
+        {
+          "id": "vol-2",
+          "time": "14:30-16:00",
+          "title": "Интерактивная площадка «Интеллектуальные игры»",
+          "description": "Интеллектуальные развлечения",
+          "category": "intellectual"
+        }
+      ]
+    }
+  ]
+}
