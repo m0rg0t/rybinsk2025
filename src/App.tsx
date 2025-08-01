@@ -1,5 +1,6 @@
 import { Calendar, MapPin, Clock } from 'lucide-react';
 import { EventList } from '@/components/EventList';
+import { OfflineIndicator } from '@/components/OfflineIndicator';
 import { Badge } from '@/components/ui/badge';
 import eventData from '@/data/events.json';
 import { format } from 'date-fns';
@@ -11,6 +12,7 @@ function App() {
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-blue-50 to-indigo-100">
+      <OfflineIndicator />
       {/* Header */}
       <header className="bg-white shadow-sm border-b">
         <div className="container mx-auto px-4 py-6">
