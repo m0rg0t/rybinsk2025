@@ -19,7 +19,16 @@ export const categoryTranslations: Record<string, string> = {
   equestrian: 'Конный спорт',
   games: 'Игры',
   charity: 'Благотворительность',
-  intellectual: 'Интеллектуальные игры'
+  intellectual: 'Интеллектуальные игры',
+  ceremony: 'Церемония',
+  performance: 'Выступление',
+  dance: 'Танцы',
+  cultural: 'Культурная программа',
+  workshop: 'Мастер-класс',
+  fashion: 'Модный показ',
+  entertainment: 'Развлечения',
+  event: 'Мероприятие',
+  market: 'Ярмарка'
 };
 
 export function getCategoryLabel(category: string): string {
