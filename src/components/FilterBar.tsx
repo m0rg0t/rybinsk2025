@@ -1,8 +1,8 @@
-import { Search, Filter, Clock, MapPin } from 'lucide-react';
-import { Button } from '@/components/ui/button';
-import { Input } from '@/components/ui/input';
-import { Badge } from '@/components/ui/badge';
-import { FilterType } from '@/types';
+import { Search, Filter, Clock, MapPin } from "lucide-react";
+import { Button } from "@/components/ui/button";
+import { Input } from "@/components/ui/input";
+import { Badge } from "@/components/ui/badge";
+import { FilterType } from "@/types";
 
 interface FilterBarProps {
   searchQuery: string;
@@ -48,18 +48,18 @@ export function FilterBar({
         </div>
         <div className="flex flex-wrap gap-2">
           <Button
-            variant={statusFilter === 'all' ? 'default' : 'outline'}
+            variant={statusFilter === "all" ? "default" : "outline"}
             size="sm"
-            onClick={() => onStatusFilterChange('all')}
+            onClick={() => onStatusFilterChange("all")}
             className="flex items-center gap-1"
           >
             <Filter className="h-3 w-3" />
             Все мероприятия
           </Button>
           <Button
-            variant={statusFilter === 'current' ? 'default' : 'outline'}
+            variant={statusFilter === "current" ? "default" : "outline"}
             size="sm"
-            onClick={() => onStatusFilterChange('current')}
+            onClick={() => onStatusFilterChange("current")}
             className="flex items-center gap-1"
           >
             <div className="w-2 h-2 bg-green-500 rounded-full" />
@@ -71,9 +71,9 @@ export function FilterBar({
             )}
           </Button>
           <Button
-            variant={statusFilter === 'future' ? 'default' : 'outline'}
+            variant={statusFilter === "future" ? "default" : "outline"}
             size="sm"
-            onClick={() => onStatusFilterChange('future')}
+            onClick={() => onStatusFilterChange("future")}
             className="flex items-center gap-1"
           >
             <div className="w-2 h-2 bg-blue-500 rounded-full" />
@@ -95,23 +95,25 @@ export function FilterBar({
         </div>
         <div className="flex flex-wrap gap-2">
           <Button
-            variant={selectedLocation === 'all' ? 'default' : 'outline'}
+            variant={selectedLocation === "all" ? "default" : "outline"}
             size="sm"
-            onClick={() => onLocationChange('all')}
+            onClick={() => onLocationChange("all")}
           >
             Все локации
           </Button>
           {locations.map((location) => (
             <Button
               key={location.id}
-              variant={selectedLocation === location.id ? 'default' : 'outline'}
+              variant={selectedLocation === location.id ? "default" : "outline"}
               size="sm"
               onClick={() => onLocationChange(location.id)}
-              className="flex items-center gap-1"
+              className="flex flex-row items-center justify-center gap-0 h-auto py-2 px-2 text-center leading-tight"
             >
-              {location.name}
+              <span className="text-xs font-medium break-words">
+                {location.name}
+              </span>
               {location.count > 0 && (
-                <Badge variant="secondary" className="ml-1 text-xs">
+                <Badge variant="secondary" className="text-xs mt-0.5 h-4 px-1">
                   {location.count}
                 </Badge>
               )}
