@@ -3,6 +3,7 @@ import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
 import { EventWithStatus } from '@/types';
 import { cn } from '@/lib/utils';
+import { getCategoryLabel } from '@/utils/categories';
 
 interface EventCardProps {
   event: EventWithStatus;
@@ -66,7 +67,7 @@ export function EventCard({ event, locationName }: EventCardProps) {
         
         <div className="flex gap-2">
           <Badge variant="outline" className={cn('text-xs', categoryColor)}>
-            {event.category}
+            {getCategoryLabel(event.category)}
           </Badge>
           {event.status === 'future' && (
             <Badge variant="outline" className="text-xs">
