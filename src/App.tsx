@@ -1,14 +1,22 @@
-import { Calendar, MapPin, Clock } from 'lucide-react';
+import { useState } from 'react';
+import { Calendar, MapPin, Clock, Images } from 'lucide-react';
 import { EventList } from '@/components/EventList';
+import { AfinaPage } from '@/components/AfinaPage';
 import { OfflineIndicator } from '@/components/OfflineIndicator';
 import { Badge } from '@/components/ui/badge';
+import { Button } from '@/components/ui/button';
 import eventData from '@/data/events.json';
 import { format } from 'date-fns';
 import { ru } from 'date-fns/locale';
 
 function App() {
+  const [currentView, setCurrentView] = useState<'events' | 'afina'>('events');
   const eventDate = new Date(eventData.date);
   const formattedDate = format(eventDate, 'd MMMM yyyy', { locale: ru });
+
+  if (currentView === 'afina') {
+    return <AfinaPage onBack={() => setCurrentView('events')} />;
+  }
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-blue-50 to-indigo-100">
@@ -17,11 +25,22 @@ function App() {
       <header className="bg-white shadow-sm border-b">
         <div className="container mx-auto px-4 py-6">
           <div className="flex flex-col items-center text-center space-y-4">
-            <div className="flex items-center gap-3">
-              <Calendar className="h-8 w-8 text-primary" />
-              <h1 className="text-3xl md:text-4xl font-bold text-gray-900">
-                {eventData.title}
-              </h1>
+            <div className="flex items-center justify-between w-full max-w-6xl">
+              <div></div>
+              <div className="flex items-center gap-3">
+                <Calendar className="h-8 w-8 text-primary" />
+                <h1 className="text-3xl md:text-4xl font-bold text-gray-900">
+                  {eventData.title}
+                </h1>
+              </div>
+              <Button 
+                variant="outline"
+                onClick={() => setCurrentView('afina')}
+                className="flex items-center gap-2"
+              >
+                <Images className="h-4 w-4" />
+                Афиши
+              </Button>
             </div>
             
             <div className="flex flex-wrap items-center justify-center gap-4 text-muted-foreground">
